@@ -30,54 +30,64 @@ partial class FrmLogin
     {
         label1 = new Label();
         txtUserName = new TextBox();
-        txtmatkhau = new TextBox();
+        txtpassword = new TextBox();
         label2 = new Label();
+        btnlogin = new Button();
         SuspendLayout();
         // 
         // label1
         // 
         label1.AutoSize = true;
-        label1.Location = new Point(50, 76);
+        label1.Location = new Point(44, 57);
         label1.Name = "label1";
-        label1.Size = new Size(78, 20);
+        label1.Size = new Size(62, 15);
         label1.TabIndex = 0;
         label1.Text = "UserName";
         // 
         // txtUserName
         // 
-        txtUserName.Location = new Point(128, 72);
-        txtUserName.Margin = new Padding(3, 4, 3, 4);
+        txtUserName.Location = new Point(112, 54);
         txtUserName.Name = "txtUserName";
-        txtUserName.Size = new Size(397, 27);
+        txtUserName.Size = new Size(348, 23);
         txtUserName.TabIndex = 1;
         // 
-        // txtmatkhau
+        // txtpassword
         // 
-        txtmatkhau.Location = new Point(128, 107);
-        txtmatkhau.Margin = new Padding(3, 4, 3, 4);
-        txtmatkhau.Name = "txtmatkhau";
-        txtmatkhau.PasswordChar = '*';
-        txtmatkhau.Size = new Size(397, 27);
-        txtmatkhau.TabIndex = 3;
+        txtpassword.Location = new Point(112, 80);
+        txtpassword.Name = "txtpassword";
+        txtpassword.PasswordChar = '*';
+        txtpassword.Size = new Size(348, 23);
+        txtpassword.TabIndex = 3;
         // 
         // label2
         // 
         label2.AutoSize = true;
-        label2.Location = new Point(50, 111);
+        label2.Location = new Point(44, 83);
         label2.Name = "label2";
-        label2.Size = new Size(70, 20);
+        label2.Size = new Size(57, 15);
         label2.TabIndex = 2;
-        label2.Text = "Mật khẩu";
+        label2.Text = "Password";
+        // 
+        // btnlogin
+        // 
+        btnlogin.Location = new Point(385, 109);
+        btnlogin.Name = "btnlogin";
+        btnlogin.Size = new Size(75, 23);
+        btnlogin.TabIndex = 4;
+        btnlogin.Text = "Login";
+        btnlogin.UseVisualStyleBackColor = true;
         // 
         // FrmLogin
         // 
-        AutoScaleDimensions = new SizeF(8F, 20F);
+        AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(577, 451);
-        Controls.Add(txtmatkhau);
+        ClientSize = new Size(505, 338);
+        Controls.Add(btnlogin);
+        Controls.Add(txtpassword);
         Controls.Add(label2);
         Controls.Add(txtUserName);
         Controls.Add(label1);
+        Margin = new Padding(3, 2, 3, 2);
         Name = "FrmLogin";
         Text = "Login";
         ResumeLayout(false);
@@ -88,6 +98,7 @@ partial class FrmLogin
 
     private Label label1;
     private TextBox txtUserName;
-    private TextBox txtmatkhau;
+    private TextBox txtpassword;
     private Label label2;
+    private Button btnlogin;
 }
