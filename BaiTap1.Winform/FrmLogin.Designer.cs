@@ -30,32 +30,54 @@ partial class FrmLogin
     {
         label1 = new Label();
         txtUserName = new TextBox();
+        txtmatkhau = new TextBox();
+        label2 = new Label();
         SuspendLayout();
         // 
         // label1
         // 
         label1.AutoSize = true;
-        label1.Location = new Point(44, 57);
+        label1.Location = new Point(50, 76);
         label1.Name = "label1";
-        label1.Size = new Size(62, 15);
+        label1.Size = new Size(78, 20);
         label1.TabIndex = 0;
         label1.Text = "UserName";
         // 
         // txtUserName
         // 
-        txtUserName.Location = new Point(112, 54);
+        txtUserName.Location = new Point(128, 72);
+        txtUserName.Margin = new Padding(3, 4, 3, 4);
         txtUserName.Name = "txtUserName";
-        txtUserName.Size = new Size(348, 23);
+        txtUserName.Size = new Size(397, 27);
         txtUserName.TabIndex = 1;
+        // 
+        // txtmatkhau
+        // 
+        txtmatkhau.Location = new Point(128, 107);
+        txtmatkhau.Margin = new Padding(3, 4, 3, 4);
+        txtmatkhau.Name = "txtmatkhau";
+        txtmatkhau.PasswordChar = '*';
+        txtmatkhau.Size = new Size(397, 27);
+        txtmatkhau.TabIndex = 3;
+        // 
+        // label2
+        // 
+        label2.AutoSize = true;
+        label2.Location = new Point(50, 111);
+        label2.Name = "label2";
+        label2.Size = new Size(70, 20);
+        label2.TabIndex = 2;
+        label2.Text = "Mật khẩu";
         // 
         // FrmLogin
         // 
-        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleDimensions = new SizeF(8F, 20F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(505, 338);
+        ClientSize = new Size(577, 451);
+        Controls.Add(txtmatkhau);
+        Controls.Add(label2);
         Controls.Add(txtUserName);
         Controls.Add(label1);
-        Margin = new Padding(3, 2, 3, 2);
         Name = "FrmLogin";
         Text = "Login";
         ResumeLayout(false);
@@ -66,4 +88,6 @@ partial class FrmLogin
 
     private Label label1;
     private TextBox txtUserName;
+    private TextBox txtmatkhau;
+    private Label label2;
 }
